@@ -17,3 +17,11 @@ vim.keymap.set("n", "<A-j>", ":m .+1<CR>==gv", { noremap = true, silent = true, 
 
 -- 上移当前行（配套操作）
 vim.keymap.set("n", "<A-k>", ":m .-2<CR>==gv", { noremap = true, silent = true, desc = "Move line up" })
+
+local map = vim.keymap.set
+
+-- 绑定 <Leader>cp 到自定义命令
+map("n", "<Leader>cp", ":CopyGitRelPath<CR>", {
+  desc = "Copy file path relative to Git root",
+  silent = true,
+})

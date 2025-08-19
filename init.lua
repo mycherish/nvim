@@ -1,5 +1,7 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 
+require("config.commands") -- 加载自定义命令
+
 require("config.lazy")({
   "williamboman/mason.nvim",
   config = function()
