@@ -6,4 +6,5 @@ return {
   { import = "plugins.mason-null-ls" },
   { import = "plugins.php" }, -- PHP LSP 配置
   { import = "plugins.php-filetype" }, -- PHP 文件类型支持
+  { import = "plugins.neo-tree" },
 }
